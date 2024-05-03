@@ -1,2 +1,2 @@
 #!/bin/bash
-ls $search_path > basics.txt
+ls -la
