@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Initialize a counter
+counter=0
+#define the condition for the until loop
+until [$counter -ge 10]
+do
+	#display the best school phrase
+	echo "Best School"
+	((counter++))
+done
