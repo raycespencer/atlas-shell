@@ -1,4 +1,5 @@
 #!/bin/bash
-git add .
-git commit -m read -p "please enter a text prompt: " prompt
-echo "you entered: $prompt"
+read -p "please enter the name of the file: " file name
+git add . 
+git commit -m "add $filename"
+git push
