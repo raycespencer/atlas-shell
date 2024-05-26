@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# listing the contents of the current directory in list format
+
+for file in *; do
+	if [[ ! $file == .* && $file == *-* ]]; then
+
+		name=${file#*-}
+
+		echo "$name"
+	fi
+done
