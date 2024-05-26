@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# using while loop to display numbers 0 threw 12 and 1 to 59
+
+hour=0
+minute=1
+
+while [ $hour -le 12 ]
+do
+	printf "%02d:%02d/n" $hour $minute
+
+	minute=$((minute + 1))
+
+	if [ $minute -gt 59 ]; then
+		minute=1
+		hour=$((hour + 1))
+	fi
+done | head -n 70
