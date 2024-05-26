@@ -1,6 +1,10 @@
 #!/bin/bash
+read -p "please enter the commit message (or press enter to cancel: " commit_message
+if [ -z "$commit_message" ]; then
+	echo "commit cancelled."
+	exit 0
+fi
 git add .
-read -p "please enter the commit message: " commit_message
 git commit -m "$commit_message"
 git push
 
