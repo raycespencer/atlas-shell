@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
-# listing the contents of the current directory in list format
+# Get the directory of the script
+script_dir=$(dirname "$0")
 
-current_dir=$(dirname "$0")
+# Change to the script's directory
+cd "$script_dir" || exit
 
-cd "$current_dir" || cd ... || exit |...
-
+# Loop through each file in the current directory
 for file in *; do
-	if [[ ! $file == .* && $file == *-* ]]; then
-
-		name=${file#*-}
-
-		echo "$name"
-	fi
+    # Check if the file is not hidden and contains a dash in its name
+    if [[ ! $file == .* && $file == *-* ]]; then
+        # Extract the part of the name after the first dash
+        name=${file#*-}
+        # Print the extracted name
+        echo "$name"
+    fi
 done
