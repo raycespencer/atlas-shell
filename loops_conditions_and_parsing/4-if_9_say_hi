@@ -1,6 +1,6 @@
 #!/bin/bash
-
 # add a counter
+
 counter=1
 
 # start the loop
