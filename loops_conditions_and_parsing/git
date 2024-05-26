@@ -1,3 +1,4 @@
 #!/bin/bash
 git add .
 git commit -m read -p "please enter a text prompt: " prompt
+echo "you entered: $prompt"
