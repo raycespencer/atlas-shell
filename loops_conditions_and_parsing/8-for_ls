@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # listing the contents of the current directory in list format
 
+current_dir=$(dirname "$0")
+
+cd "$current_dir"
+
 for file in *; do
 	if [[ ! $file == .* && $file == *-* ]]; then
 
