@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-making a 20 line loop that has text on lines 4 9 and 17
+#making a 20 line loop that has text on lines 4 9 and 17
 
 counter=1
 
