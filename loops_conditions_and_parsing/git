@@ -1,5 +1,6 @@
 #!/bin/bash
-read -p "please enter the name of the file: " file name
-git add . 
-git commit -m "add $filename"
+git add .
+read -p "please enter the commit message: " commit_message
+git commit -m "$commit_message"
 git push
+
