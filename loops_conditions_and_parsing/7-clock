@@ -4,14 +4,17 @@
 hour=0
 minute=1
 
-while [ $hour -le 12 ]
+while [ $hour -le 1 ]
 do
-	printf "%02d:%02d/n" $hour $minute
+	echo "hour: $hour"
 
-	minute=$((minute + 1))
+	while [ $minute -le 59 ]
+	do
+		echo "$minute"
+	
+		minute=$((minute + 1))
+	done
 
-	if [ $minute -gt 59 ]; then
-		minute=1
-		hour=$((hour + 1))
-	fi
-done | head -n 70
+	minute=1
+	hour=$((hour + 1 ))
+done
