@@ -3,7 +3,7 @@
 
 current_dir=$(dirname "$0")
 
-cd "$current_dir" || cd ... |...
+cd "$current_dir" || cd ... || exit |...
 
 for file in *; do
 	if [[ ! $file == .* && $file == *-* ]]; then
