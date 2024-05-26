@@ -7,15 +7,12 @@ while [ $counter -le 20 ]
 do
 	case $counter in
 		4)
-			echo "$counter"
 			echo "bad luck from China"
 			;;
 		9)
-			echo "$counter"
 			echo "bad luch from Japan"
 			;;
 		17)
-			echo "$counter"
 			echo "bad luck from Italy"
 			;;
 		*)
