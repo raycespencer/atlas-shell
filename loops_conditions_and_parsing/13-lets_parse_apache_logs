@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# extracting the ip address of a file
+log_file="apache-access.log"
+
+awk '{print $1, $9}' "$log_file"
